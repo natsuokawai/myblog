@@ -1,18 +1,12 @@
 @import "./burger-menu.scss";
 @import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
 
 .Header {
-	width: 100%;
-	position: relative;
-	top: 0;
-	margin-top: 3em;
 	display: flex;
-	flex-shrink: 0;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
+	justify-content: space-between;
+	align-items: center;
 	&__logo {
-		margin-left: 10%;
 		text-decoration: none;
 		margin-top: 0;
 		&__text {
@@ -58,9 +52,7 @@
 		}
 	}
 
-	&__SocialLinks {
-		padding: 5px;
-		margin-bottom: 20px;
+	&__Links {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -68,7 +60,7 @@
 			background: none;
 		}
 		&__icon {
-			color: white;
+			color: $text-black;
 		}
 	}
 }

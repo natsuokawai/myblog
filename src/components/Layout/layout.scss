@@ -1,11 +1,12 @@
 .Layout {
-	margin: 0;
 	width: 100%;
 	min-height: 100vh;
+	max-width: 48rem;
+	margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem 1.125rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
 	&__children {
 		flex: 1;
 		padding: 1vh 0vw;

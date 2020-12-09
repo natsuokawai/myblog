@@ -1,0 +1,10 @@
+@import "../../styles/colors.scss";
+
+.Links {
+	&__icon {
+		font-size: 120%;
+		margin-left: 10px;
+		color: $text-black;
+		z-index: 10;
+	}
+}
