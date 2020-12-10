@@ -22,7 +22,7 @@ export default function PostPage({ data: { mdx } }) {
 			<article className="PostPage" id={mdx.id}>
 				<h1 className="PostPage__title">{mdx.frontmatter.title}</h1>
 				<h3 className="PostPage__date">
-					{dateInEnglish(mdx.frontmatter.date)}
+					{mdx.frontmatter.date}
 				</h3>
 				<MDXProvider components={shortcodes} className="test">
 					<MDXRenderer>{mdx.body}</MDXRenderer>
