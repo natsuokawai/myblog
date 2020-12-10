@@ -28,8 +28,8 @@ export default function Posts({ data }) {
 						</Link>
 						<div className="Post__description">
 							{post.node.frontmatter.description.length > 1
-								? truncateText(post.node.frontmatter.description, 265)
-								: truncateText(post.node.rawBody, 265)}
+								? truncateText(post.node.frontmatter.description, 120)
+								: truncateText(post.node.rawBody.split('---\n')[2], 120)}
 						</div>
 						<Link to={`/posts/${post.node.slug}`} className="Post__readmore">
 							Read more
